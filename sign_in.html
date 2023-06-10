@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Войти</title>
+	<link rel="stylesheet" href="css/sign_in.css">
+</head>
+<body>
+	<div class="gridCont"> 
+		<header class="header"> 
+			<a href="" class="logo">
+			</a> 
+			<nav class="menuGlav"> 
+				<ul class="listGlav"> 
+					<li><a href="index.html" class="linkGlav">Главная</a></li>
+					<li><a href="galler.html" class="linkGlav">Галерея</a></li>
+					<li><a href="sign_in.html" class="linkGlav">Войти</a></li>
+					<li><a href="contact.html" class="linkGlav">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>
+	
+		<main class="main">
+			<aside class="sidebar">
+				<div class="asideForm">
+				<form accept-charset="ISO-8859-1" name="find" class="form" >
+					<h2>Найти</h2>
+					<input type="text" placeholder="Поиск...">
+					<button type="submit"></button>
+				</form> </div>	
+
+				<div class="leng">
+					<h3>Выберите язык</h3>
+				<div class="listbox">
+					<div class="main_listbox">RU</div>
+					<div class="listbox-content">
+					  <a href="#">UA</a>
+					  <a href="#">RU</a>
+					  <a href="#">EN</a>
+					</div>
+				  </div></div>
+			</aside>
+			<div class="contentForm">
+				<form accept-charset="ISO-8859-1" name="log_in" class="formSign" >
+				
+					<h2>Вход</h2>
+					<label for="username">Логин<em>*</em></label>
+						<input type="text" id="username">
+					
+					 <label for="password">Пароль<em>*</em></label>
+						<input type="password" id="password">   
+				
+					<input type="submit" value="Войти">				
+					
+				<div class="registAndFetPass">
+					<a href="">Забыли пароль ?</a>
+					<a href="#registra" >Регистрация</a></div>
+				</form>
+				<!-- Регистрация !-->
+				<div class="registr" id="registra">
+					<form method="post" action="registra.php"> 
+						
+						  <form action="#" id='send' method='POST'>
+						  <fieldset>
+							<label>Имя</label>
+							<input type='text' name='UserName' required><span></span>
+							<br>
+							<label>Фамилия</label>
+							<input type='text' name='UserFamily' required><span></span>
+							<br>
+							<label>Город</label>
+							<input type='text' name='UserCity' placeholder='Город' required><span></span>
+							<br>
+						  </fieldset>
+						  <fieldset>
+							<label>Эл. почта</label>
+							<input type='text' name='UserEmail' placeholder='Эл. почта' required><span></span>
+							<br>
+							<label>Пароль</label>
+							<input type='password' name='UserPass' placeholder='Пароль' required><span></span>
+							<br>
+							<label>Повторите</label>
+							<input type='password' name='RepeatPass' placeholder='Повторите' required><span></span>
+							<br>
+						  </fieldset>
+						  <div class="sum">
+			
+						 <input type="submit" name="Submit" value="Зарегестрироваться" onmousedown="viewDiv()">
+						  </div>
+						</form>
+				</div>
+                <!-- Регистрация !-->
+
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="copy">&copy;&nbsp;2014-2023 True.com <br> Все права защищены.</div> 
+			<div class="text"> Контакты: <br>
+				Телефон: +7 999 88 77 66 <br> </div> 
+		</footer>
+	</div>
+
+	<script>
+		function viewDiv(){
+  document.getElementById("registra").style.display = "none";
+};
+	</script>
+
+</body>
+</html>
